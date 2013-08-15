@@ -3,10 +3,11 @@ require 'net/http'
 class Scaffold
 
   before do
-    @title = "Scaffold"
+    @title = 'Scaffold'
   end
 
   get '/' do
+    @greeting = Hello::hello
     @text = Net::HTTP.get(URI('http://loripsum.net/api/2/decorate/ul/link/code'))
     haml :default
   end

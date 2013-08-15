@@ -9,6 +9,7 @@ describe 'Scaffold::Default' do
     response.content_type.split(';').first.must_equal('text/html')
     response.body.must_include 'bootstrap'
     response.body.must_include '<title>Scaffold</title>'
+    response.body.must_include 'Hello, World!'
   end
 
   it 'should return hello world json doc from /json' do

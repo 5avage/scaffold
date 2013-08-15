@@ -1,11 +1,7 @@
 require 'sinatra/base'
-require "sinatra/config_file"
 require 'sinatra/json'
-require 'ap'
-require 'cgi'
 require 'haml'
 require 'multi_json'
-require 'pry'
 require 'require_all'
 
 class Scaffold < Sinatra::Base
@@ -13,10 +9,6 @@ class Scaffold < Sinatra::Base
 
   configure :production do
     disable :show_exceptions
-    # set :mysql_db_host, ENV['MYSQL_DB_HOST']
-    # set :mysql_db_name, ENV['MYSQL_DB_NAME']
-    # set :mysql_password, ENV['MYSQL_PASSWORD']
-    # set :mysql_username, ENV['MYSQL_USERNAME']
   end
 
   configure :development, :test do
@@ -38,5 +30,5 @@ class Scaffold < Sinatra::Base
 
 end
 
-require_all 'app'
+require_all 'app/model', 'app/controller'
 
