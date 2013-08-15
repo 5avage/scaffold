@@ -1,0 +1,15 @@
+%nav.navbar.navbar-fixed-top.navbar-inverse{role:"navigation"}
+  .navbar-header
+    .container
+      %button.navbar-toggle{"data-toggle" => "collapse", "data-target" => ".navbar-ex1-collapse"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => url('')}Scaffold
+  .collapse.navbar-collapse.navbar-ex1-collapse
+    %ul.nav.navbar-nav
+      %li.active
+        %a{:href => url('')}Home
+      %li
+        %a{:href => url('json')}JSON

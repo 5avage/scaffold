@@ -1,0 +1,10 @@
+.tags*
+*.rbc
+*.gem
+*.sassc
+.rspec
+/.bundle
+/vendor/bundle
+/db/*
+/log/*
+/tmp/*
