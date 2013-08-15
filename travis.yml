@@ -1,0 +1,12 @@
+language: ruby
+bundler_args: --without development
+rvm:
+  - 2.0.0
+  - ruby-head
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: jruby-head
+notifications:
+  recipients:
+    - github@5avage.com
