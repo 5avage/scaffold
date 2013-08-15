@@ -1,4 +1,6 @@
-# Scaffold project
+[![Build Status](https://travis-ci.org/5avage/scaffold.png)](https://travis-ci.org/5avage/scaffold)
+
+# Sinatra Scaffold
 This is a basic, lightly-opinionated, fully functional Sinatra application scaffold. It features automatically running minispec (via [Guard](https://github.com/guard/guard)) and a basic layout via reference to [Bootstrap 3](http://getbootstrap.com).  Ruby version 2.0+ is assumed.  A simple global replacement of the word `Scaffold` with your app name should get you up and running.
 
 ## Guard auto-testing
