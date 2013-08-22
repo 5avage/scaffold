@@ -1,4 +1,4 @@
-require_relative 'setup'
+require_relative 'spec_helper'
 
 describe 'Scaffold::Default' do
 
